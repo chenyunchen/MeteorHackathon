@@ -8,6 +8,9 @@ Meteor.startup ->
     @route 'index',
       path: '/'
       template: 'index'
+    @route 'message',
+      path: '/message'
+      template: 'main'
 
 Meteor.methods
   'createPost': (text)->
