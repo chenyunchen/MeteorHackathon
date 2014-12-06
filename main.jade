@@ -4,8 +4,13 @@ body
   +main
 
 template(name='main')
+  hr
+  +loginButtons
   h2 Chatroom:
+  h2 Text:
+  input.text
+  button.postBtn Post
   each chats
     hr
-    h2 {{author}}: {{text}}
+    h2 {{username}}: {{text}}
     hr
