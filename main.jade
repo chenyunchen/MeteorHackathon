@@ -4,6 +4,8 @@ body
   +main
 
 template(name='main')
-  h2 Hello Main Meteor
-  h2 Data: {{strData}}
-  h2 Function: {{funData 5}}
+  h2 Chatroom:
+  each chats
+    hr
+    h2 {{author}}: {{text}}
+    hr
