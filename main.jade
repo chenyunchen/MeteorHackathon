@@ -1,7 +1,12 @@
 head
   title Meteor Hackathon 20141206
-body
-  +main
+template(name='layout')
+  h2 I am Layout
+  hr
+  +yield
+  hr
+template(name='index')
+  h2 I am Index
 
 template(name='main')
   hr

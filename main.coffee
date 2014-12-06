@@ -1,10 +1,13 @@
-@chats = [
-  {text: 'hello!',author:'yun'},
-  {text: 'hello!',author:'yun'},
-  {text: 'hello!',author:'yun'},
-]
-
 @Chats = new Meteor.Collection 'Chats'
+
+Router.configure
+  layoutTemplate: 'layout'
+
+Meteor.startup ->
+  Router.map ->
+    @route 'index',
+      path: '/'
+      template: 'index'
 
 Meteor.methods
   'createPost': (text)->
